@@ -1,3 +1,19 @@
-div {
+header {
     float: left;
+}
+
+.cash {
+    display: block;
+}
+
+.mdish {
+    display: none;
+}
+
+.odish {
+    display: none;
+}
+
+.back {
+    display: none;
 }
