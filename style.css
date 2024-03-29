@@ -2,8 +2,12 @@ header {
     display: flex;
 }
 
+ul {
+    list-style: url("ulimg.bmp");
+}
+
 .cash {
-    display: flex;
+    display: block;
 }
 
 .mdish {
