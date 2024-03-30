@@ -1,9 +1,106 @@
 header {
-    display: flex;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
 }
 
-ul {
-    list-style: url("ulimg.bmp");
+#asidebtn {
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+#headerindex {
+    font-size: x-large;
+    vertical-align: middle;
+    border: none;
+    margin-left: 2%;
+}
+
+.headerbtn {
+    font-size: x-large;
+    border: none;
+    margin-left: 2%;
+    width: 5.8%;
+    padding: 0.5% 0.4% 0.5% 0.4%;
+    border-radius: 8px;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.headerbtn span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.headerbtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -0.1%;
+    transition: 0.5s;
+}
+
+.headerbtn:hover span {
+    padding-right: 25px;
+}
+  
+.headerbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.loginsystem {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-size: x-large;
+}
+
+#loginform {
+    max-height: max-content;
+}
+
+#account {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+}
+
+#password {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+}
+
+#acselect {
+    flex-grow: 1;
+    font-size: large;
+}
+
+#passw {
+    flex-grow: 1;
+    font-size: medium;
+}
+
+.mainsystem {
+    display: none;
 }
 
 .cash {
